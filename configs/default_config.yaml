@@ -1,0 +1,34 @@
+pipeline:
+  name: "AnimeEnhance"
+  version: "0.4"
+  device: "cuda"
+  target_gpu: "NVIDIA L4"
+
+paths:
+  base_dir: "/content/AnimeEnhance"
+  input_dir: "data/input"
+  output_dir: "data/output"
+  weights_dir: "weights"
+  drive_mount_point: "/content/drive"
+
+model:
+  name: "RealESRGAN_x4plus_anime_6B"
+  scale: 4
+  checkpoint_filename: "RealESRGAN_x4plus_anime_6B.pth"
+  precision: "fp16"
+
+inference:
+  batch_size: 1
+  tile_size: 512
+  tile_padding: 32
+  pre_pad: 0
+  half_precision: true
+
+validation:
+  allowed_formats:
+    - "png"
+    - "jpg"
+    - "jpeg"
+    - "webp"
+  max_image_dimension: 8192
+  max_file_size_mb: 50

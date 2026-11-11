@@ -1,0 +1,43 @@
+{
+  "run_id": "cc83570f-6708-4984-a3df-a7cc0f928d5f",
+  "timestamp_utc": "2026-11-11T16:22:27.176211+00:00",
+  "execution_environment": "VS Code Remote - Google Colab (NVIDIA L4 GPU)",
+  "input_file": {
+    "filename": "sample_anime_portrait.jpeg",
+    "sha256": "b73267a86af1a7af407ab66b63cb27c4a31595c5ff904dec45244f1ba447955c",
+    "dimensions": {
+      "width": 511,
+      "height": 464
+    },
+    "format": "JPEG",
+    "color_mode": "RGB"
+  },
+  "model_execution": {
+    "model_name": "RealESRGAN_x4plus_anime_6B",
+    "checkpoint_sha256": "f872d837d3c90ed2e05227bed711af5671a6fd1c9f7d7e91c911a61f155e99da",
+    "scale_factor": 4,
+    "tile_size": 512,
+    "tile_padding": 32,
+    "precision": "FP16"
+  },
+  "environment": {
+    "python_version": "3.13.16",
+    "torch_version": "2.14.1+cu130",
+    "cuda_version": "13.0",
+    "gpu_device": "NVIDIA L4",
+    "peak_vram_allocated_mb": 2031.12,
+    "peak_vram_reserved_mb": 2698.0
+  },
+  "output_file": {
+    "filename": "sample_anime_portrait_x4_cc83570f.png",
+    "sha256": "e242a7213bc23871fbef76f834c1c5358ffd2b3987b3a805ba6be874d3e7d946",
+    "dimensions": {
+      "width": 2044,
+      "height": 1856
+    },
+    "format": "PNG",
+    "execution_duration_seconds": 1.432,
+    "status": "SUCCESS"
+  },
+  "disclaimer": "Detail hasil restorasi merupakan aproksimasi inferensi spasial model, bukan pemulihan ground-truth autentik."
+}
